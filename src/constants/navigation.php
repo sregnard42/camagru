@@ -1,24 +1,45 @@
 <?php
+
 	// URLs
-	define("PAGE_HOME", ".");
-	define("PAGE_MONTAGE", "montage");
-	define("PAGE_LOGIN", "login");
-	define("PAGE_REGISTER", "register");
-	define("PAGE_LOGOUT", "logout");
+	define("PAGES", [
+		"HOME" => "",
+		"MONTAGE" => "montage",
+		"LOGIN" => "login",
+		"REGISTER" => "register",
+		"LOGOUT" => "logout",
+		"CONFIRM" => "confirm",
+		"RESET" => "reset",
+	]);
+
+	// Link URLs to Paths
+	define("PATHS", [
+		PAGES["HOME"] => "src/views/home.php",
+		PAGES["MONTAGE"] => "src/views/montage.php",
+		PAGES["LOGIN"] => "src/views/login.php",
+		PAGES["REGISTER"] => "src/views/register.php",
+		PAGES["LOGOUT"] => "src/views/logout.php",
+		PAGES["CONFIRM"] => "src/views/confirm.php",
+		PAGES["RESET"] => "src/views/reset.php",
+		"PAGE_NOT_FOUND" => "src/views/404.php",
+	]);
 
 	// Tabs
-	define("ACTIVITY_HOME", "Galerie");
-	define("ACTIVITY_MONTAGE", "Montage");
-	define("ACTIVITY_LOGIN", "Se connecter");
-	define("ACTIVITY_REGISTER", "Créer un compte");
-	define("ACTIVITY_LOGOUT", "Se déconnecter");
+	define("ACTIVITIES", [
+		"HOME" => "Galerie",
+		"MONTAGE" => "Montage",
+		"LOGIN" => "Se connecter",
+		"REGISTER" => "Créer un compte",
+		"LOGOUT" => "Se déconnecter",
+	]);
 
 	// Link URLs to Tabs
 	define("ROUTES", [
-		ACTIVITY_HOME => PAGE_HOME,
-		ACTIVITY_MONTAGE => PAGE_MONTAGE,
-		ACTIVITY_LOGIN => PAGE_LOGIN,
-		ACTIVITY_REGISTER => PAGE_REGISTER,
-		ACTIVITY_LOGOUT => PAGE_LOGOUT,
+		ACTIVITIES["HOME"] => PAGES["HOME"],
+		ACTIVITIES["MONTAGE"] => PAGES["MONTAGE"],
+		ACTIVITIES["LOGIN"] => PAGES["LOGIN"],
+		ACTIVITIES["REGISTER"] => PAGES["REGISTER"],
+		ACTIVITIES["LOGOUT"] => PAGES["LOGOUT"],
 	]);
+
+
 ?>

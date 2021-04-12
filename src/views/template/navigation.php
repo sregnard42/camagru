@@ -1,12 +1,12 @@
 <?php
 	$leftTabs = [
-		ACTIVITY_HOME,
-		ACTIVITY_MONTAGE,
+		ACTIVITIES["HOME"],
+		ACTIVITIES["MONTAGE"],
 	];
 
 	$rightTabsUnlogged = [
-		ACTIVITY_LOGIN,
-		ACTIVITY_REGISTER,
+		ACTIVITIES["LOGIN"],
+		ACTIVITIES["REGISTER"],
 	];
 
 	$righTabsLogged = [
@@ -16,7 +16,7 @@
 	$rightTabs = $rightTabsUnlogged;
 
 	function createTab($name) {
-		$class = $name === ACTIVITY ? "tab-selected" : "tab";
+		$class = defined("ACTIVITY") && $name === ACTIVITY ? "tab-selected" : "tab";
 		return (
 			"<div class=\"" .
 				$class .

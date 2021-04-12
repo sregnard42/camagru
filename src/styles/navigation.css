@@ -12,8 +12,6 @@
 }
 
 .tab, .tab-selected {
-	/* box-sizing: border-box; */
-	/* height: 1.5em; */
 	padding: 5px;
 	margin: 5px;
 	cursor: pointer;

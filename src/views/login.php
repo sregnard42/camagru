@@ -24,7 +24,7 @@
 		}
 	}
 
-	define("ACTIVITY", ACTIVITY_LOGIN);
+	define("ACTIVITY", ACTIVITIES["LOGIN"]);
 
 	$fields = (
 		Field("username", "Nom d'utilisateur", "text", [

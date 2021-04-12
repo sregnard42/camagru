@@ -30,7 +30,7 @@
 		}
 	}
 
-	define("ACTIVITY", ACTIVITY_REGISTER);
+	define("ACTIVITY", ACTIVITIES["REGISTER"]);
 
 	$fields = (
 		Field("email", "Adresse email", "email", [

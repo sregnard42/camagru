@@ -31,11 +31,14 @@
 			return $errors;
 		}
 		$pwd_hash = password_hash($password, PASSWORD_DEFAULT);
-		$email_link = get_uuid($email);
-		$email_full_link = 'http://localhost/confirm?token=' . $email_link;
+		$token = get_uuid($email);
+		$email_full_link = "http://localhost/confirm" .
+			"?email=" . $email .
+			"?token=" . $token .
+		"";
 		$sql = "
 			INSERT INTO users (email, username, password, email_confirm)
-			VALUES (\"$email\", \"$username\", \"$pwd_hash\", \"$email_link\");
+			VALUES (\"$email\", \"$username\", \"$pwd_hash\", \"$token\");
 		";
 		if (db_insert($sql)) {
 			$to			= $email;

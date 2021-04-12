@@ -1,4 +1,4 @@
 <?php
-	$main = "Page non trouvée";
+	$main = "Réinitialisation du mot de passe...";
 	include_once __DIR__ . "/template/page.php"
 ?>
