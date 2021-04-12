@@ -1,0 +1,10 @@
+button {
+	height: 40px;
+	min-width: 120px;
+	background: #18b8c8;
+	border: 1px solid #18b8c8;
+	border-radius: 25px;
+	box-shadow: 1px 5px 0px 0px rgba(0, 0, 0, 0.1);
+	outline: none;
+	cursor: pointer;
+}

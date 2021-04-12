@@ -1,0 +1,26 @@
+form {
+	width: 500px;;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 25px;
+	background-color: #282828;
+	box-shadow: 1px 5px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.field {
+	height: 1.5em;
+	margin-bottom: 15px;
+	display: flex;
+	flex-direction: row;
+}
+
+.label {
+	width: 200px;
+	text-align: left;
+}
+
+.input {
+	width: 200px;
+}
